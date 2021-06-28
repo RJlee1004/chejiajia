@@ -1,0 +1,14 @@
+@baseUrl=http://172.16.1.131:8971/api
+
+@categoryId=4
+@brandId=17
+
+### 获取代理商品牌分类
+GET {{baseUrl}}/brand/category/list/agent
+
+### 根据分类ID获取代理商下的品牌
+GET {{baseUrl}}/brand/list/agent/{{categoryId}}
+
+### 根据分类ID获取代理商下的品牌
+GET {{baseUrl}}/product/list/agent?productType=RECHARGE&brandId={{brandId}}
+
